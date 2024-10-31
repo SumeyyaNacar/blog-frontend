@@ -1,0 +1,197 @@
+:root{
+    --backgroundcolor: whitesmoke;
+    --color1:rgb(27, 26, 26);
+    --color2:rgb(110, 66, 66);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--backgroundcolor);
+
+}
+/* top-header kısmı */
+header nav.top-nav{
+    background-color: var(--backgroundcolor);
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+}
+
+header nav.top-nav div.social-media a i, header nav.top-nav div.search i{
+  color: var(--color1);
+  margin: 5px;
+}
+
+header nav.top-nav div.social-media{
+    flex: 1;
+    margin-left: -120px; 
+     
+}
+
+header nav.top-nav div.logo{
+    flex: 3;
+    width: 40vw;
+    margin-left: -5vw;   
+}
+
+header nav.top-nav div.search{
+    flex:1;
+    margin-right: -120px; 
+}
+
+/* Ikinci nav bar */
+
+header nav.bottom-nav{/* çalışmıyor */
+    position: sticky;
+    top: 30px;
+}
+header nav.bottom-nav ul {
+    background-color: var(--backgroundcolor);
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;   
+    border-top: 1px solid var(--color2);
+    border-bottom: 1px solid var(--color2);
+    
+    
+
+}
+
+header nav.bottom-nav ul li{
+    position: relative;
+}
+
+header nav.bottom-nav ul li a{
+    color: var(--color1);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+
+header nav.bottom-nav ul li a:hover{
+    background-color: var(--backgroundcolor);
+    color: var(--color2);
+  
+
+}
+/* dropdown */
+header nav.bottom-nav li a.dropdown{
+    padding: 12px 16px;
+    color: var(--color1);
+    text-align: center;
+    z-index: 2;
+ 
+}
+header nav.bottom-nav ul li ul.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:var(--backgroundcolor);
+    list-style: none;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    transition: opacity 0.7s ease;/* çalışmıyor */
+    
+}
+
+header nav.bottom-nav li.dropdown-content a:hover{ 
+    background-color: #555;
+}
+/* Hover ile dropdown menüyü gösterme */
+header nav.bottom-nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* main üst kısım */
+/* background resim sonrası dropdown görünmüyor */
+
+main section.section1{
+    background: rgba(255, 255, 255, 0.3)/* buradaki son deger opacity değeri */  url("../image/herbs.jpg") center center no-repeat;
+    background-blend-mode: overlay; 
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    margin-top: 0;
+    position: relative;
+    z-index: -2;
+   
+       
+}
+
+main section.section1 div {
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 0;
+}
+main section.section1 div h2{
+    margin-top: -35px;
+   
+}
+/* sutunları ayarlama */
+main section.container{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 3vh;
+
+    
+}
+
+main section.section2{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+main aside{
+    flex: 1;
+    background-color: var(--color2);
+    padding: 20px;
+    color: var(--backgroundcolor);
+}
+/* SECTION-2 KISMI */
+
+section.section2 > section.section-sub1 >div, 
+section.section2 > section.section-sub1 >h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+section.section2 > section.section-sub1 > h2{
+    text-transform: uppercase;
+}
+
+section.section2 > section.section-sub2 >div p{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+
+
