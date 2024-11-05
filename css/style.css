@@ -116,7 +116,6 @@ header nav.bottom-nav ul li:hover .dropdown-content {
 }
 
 /* main üst kısım */
-/* background resim sonrası dropdown görünmüyor */
 
 main section.section1{
     background: rgba(255, 255, 255, 0.3)/* buradaki son deger opacity değeri */  url("../image/herbs.jpg") center center no-repeat;
@@ -156,17 +155,19 @@ main section.container{
 }
 
 main section.section2{
-    flex: 4;
+    flex: 3;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    
+  
    
 }
 main aside{
     flex: 1;
-    background-color: var(--color2);
+    background-color: var(--backgroundcolor);
     padding: 20px;
-    color: var(--backgroundcolor);
+    color: var(--color1);
+    margin-right: 75px;
 }
 /* SECTION-2 KISMI */
 
@@ -189,7 +190,163 @@ section.section2 > section.section-sub2 >div p{
     text-align: center;
     font-size: 18px;
 }
+/* SUB-SECTION KISMI */
 
+.section-sub2 {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+.section-sub2 > h3 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+section.section2 > section.section-sub2>div{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+  
+}
+
+
+section.section2 > section.section-sub2 > div p{
+    text-align: justify;
+    font-size: 14px;
+    width: 450px;
+}
+
+aside>div{
+    border: 1px solid rgb(182, 181, 181);
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+   
+
+}
+
+aside div.subscribe{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(56, 55, 55);
+    color: var(--backgroundcolor);
+    padding: 10px 20px;
+    border-radius: 5px;
+    padding: 15px;
+}
+aside div.subscribe input[type="email"] {
+    width: 80%; /* Parent containerın %80'i kadar genişlik */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(182, 181, 181);
+}
+
+aside div.subscribe input[type="submit"] {
+    background-color: var(--color1);
+    color: var(--backgroundcolor);
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 86%; 
+    margin-bottom: 15px;
+}
+
+aside div.subscribe input[type="submit"]:hover{
+    background-color: rgb(56, 55, 55);
+}
+
+aside div.social-media, aside div.social-media a i {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--color1);
+}
+aside div.categories{
+    text-align: left;
+    margin-bottom: 30px;
+    color: var(--color1);
+    padding: 10px 20px;
+}
+
+aside div.categories ul{
+    list-style: none;
+    padding: 0;
+   
+   
+}
+
+aside div.categories ul li a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--color1);
+    font-size: 20px;
+    display: block;
+    line-height: 50px;
+}
+
+/* footer */
+
+footer{
+    background-color: rgb(56, 55, 55);
+    color: var(--backgroundcolor);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+footer div.logo{
+    flex: 1;
+}
+
+footer div.subscribe{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    background-color: rgb(56, 55, 55);
+    color: var(--backgroundcolor);
+    padding: 10px 20px;
+    flex: 1;
+ 
+}
+
+footer div.subscribe input[type="email"] {
+    width: 80%; /* Parent containerın %80'i kadar genişlik */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(182, 181, 181);
+}
+
+footer div.subscribe input[type="submit"] {
+    background-color: var(--color1);
+    color: var(--backgroundcolor);
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 84%; 
+}
+footer div.footer-menu{
+    display: inline-block;
+    color: var(--color1);
+    text-align: left; 
+    flex: 1;
+}
+
+footer div.footer-menu a{
+    display: block;
+    margin-bottom: 20px;
+    gap: 10px;
+    color: var(--backgroundcolor);
+    text-decoration: none;
+    
+}
 
 
 
